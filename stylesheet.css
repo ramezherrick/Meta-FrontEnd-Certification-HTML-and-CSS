@@ -1,13 +1,20 @@
 h1 {
   font-size: 2rem;
+  color: #4b5b53;
 }
 
 h2 {
   font-size: 1.5rem;
+  color: #4b5b53;
+}
+
+p {
+  font-size: 1rem;
+  color: #022c17;
 }
 
 body {
-  background-color: #edefee;
+  background-color: #deebe4;
   font-family: "Times New Roman", Times, serif;
   margin: 3rem 5% 3rem 5%;
 }
@@ -45,6 +52,7 @@ nav > ul {
 ul li a {
   text-decoration: none;
   color: #fbfbfb;
+  font-weight: bold;
 }
 ul li a:hover {
   text-decoration: none;
@@ -63,6 +71,17 @@ article {
 }
 .main-heading-text {
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.sub-heading {
+  text-align: center;
+  margin: 0.5rem;
+  font-style: italic;
+}
+.sub-text {
+  margin: 0;
+  text-align: center;
 }
 @keyframes fadeIn {
   from {
@@ -74,20 +93,38 @@ article {
     color: red;
   }
 }
-.sub-heading {
-  text-align: center;
-}
-
 span {
   animation: fadeIn 0.5s infinite alternate linear;
+}
+figure > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 355px;
+  height: 250px;
+  border-radius: 3rem;
+  border: 10px solid #637a6e;
 }
 
 footer {
   display: flex;
+  background-color: #637a6e;
+  margin-top: 5rem;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  opacity: 0.5;
 }
 footer div {
-  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+footer div p {
+  text-wrap: nowrap;
+  color: white;
 }
 footer img {
-  width: 5%;
+  width: 20px;
+  height: 30px;
 }
