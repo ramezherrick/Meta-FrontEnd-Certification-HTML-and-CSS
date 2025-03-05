@@ -106,26 +106,28 @@ article {
   }
 }
 span {
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   animation: fadeIn 0.5s infinite alternate linear;
 }
-figure > img {
+#index-image {
   display: block;
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   width: 355px;
   height: 250px;
-  border-radius: 3rem;
+  border-radius: 50%;
   border: 5px solid #637a6e;
 }
 
-figure > img:hover {
+#index-image:hover {
   display: block;
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  width: 405px;
-  height: 300px;
+  width: 355px;
+  height: 250px;
   border-radius: 3rem;
   border: 5px solid #637a6e;
 }
@@ -252,4 +254,51 @@ form div fieldset input {
   to {
     font-style: italic;
   }
+}
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.about-text ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.about-text li::before {
+  content: "🍋";
+  color: #4b5b53;
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+.about-text ul li {
+  color: #4b5b53;
+  font-size: 1.5rem;
+}
+.about div section {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#about-figures {
+  width: 340px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+}
+#about-caption-heading,
+#about-caption-text {
+  text-align: center;
+}
+#about-caption-text {
+  margin-bottom: 2rem;
 }
