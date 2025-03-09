@@ -6,7 +6,7 @@
     <meta name="description" content="website for little lemon restaurant" />
     <meta name="author" content="Ramez Herrick - little lemon restaurant" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -22,11 +22,9 @@
     </nav>
     <main>
       <section>
-        <article>
-          <h1 class="main-heading">
-            🌟 Exciting <span>NEW</span> Additions! 🌟
-          </h1>
-          <p class="main-heading-text">
+        <article class="banner">
+          <h1>🌟 Exciting <span>NEW</span> Additions! 🌟</h1>
+          <p>
             We’re thrilled to announce three delicious new plates that have just
             been added to our seasonal menu!<br />
             <br />
@@ -36,43 +34,68 @@
           </p>
         </article>
       </section>
-      <section>
+      <section id="index-figure-section">
         <article>
-          <figure>
+          <figure id="index-figure">
             <img
               id="index-image"
               src="Logos/falafel.jpeg"
-              alt="Crispy Falafel on a plate"
+              alt="little lemon menu"
             />
             <figcaption>
-              <h2 class="sub-heading">Falafel</h2>
-              <p class="sub-text">Chickpeas, fresh parsley and cilantro</p>
+              <h2 class="sub-heading">🍋 Discover the New Menu</h2>
+              <p class="sub-text">
+                ✨ We've refreshed our Mediterranean-inspired menu with seasonal
+                flavors and exciting new dishes! From savory kebabs to rustic
+                pastas and fresh seafood, there's something for everyone 🌊✨
+              </p>
+              <br />
+              <button id="index-button">
+                <a href="menu.html">See Our Menu</a>
+              </button>
             </figcaption>
           </figure>
         </article>
         <article>
-          <figure>
+          <figure id="index-figure">
             <img
               id="index-image"
-              src="Logos/salad.jpeg"
-              alt="Fresh Greek Salad with cucumbers, tomatoes, and feta cheese"
+              src="Logos/vibe.png"
+              alt="little lemon restaurant vibe"
             />
             <figcaption>
-              <h2 class="sub-heading">Greek Salad</h2>
-              <p class="sub-text">Cucumbers, tomatoes and feta cheese</p>
+              <h2 class="sub-heading">🍋 Reserve Your Table</h2>
+              <p class="sub-text">
+                📍 Book your table today and experience the taste of the
+                Mediterranean! Walk-ins welcome, reservations recommended. ✨<br /><br />
+              </p>
+              <br />
+              <button id="index-button">
+                <a href="book.html">Book your Table</a>
+              </button>
             </figcaption>
           </figure>
         </article>
         <article>
-          <figure>
+          <figure id="index-figure">
             <img
               id="index-image"
-              src="Logos/shrimp-coctail.jpg"
-              alt="Shrimp Cocktail served with cocktail sauce and lemon wedges"
+              src="Logos/hours.jpg"
+              alt="little lemon hours"
             />
             <figcaption>
-              <h2 class="sub-heading">Shrimp Cocktail</h2>
-              <p class="sub-text">Shrimp, cocktail sauce and lemon wedges</p>
+              <h2 class="sub-heading">🍋Visit Little Lemon – We're Open</h2>
+              <p class="sub-text">
+                📍 Check our hours and stop by! Great food, warm atmosphere, and
+                a taste of the Mediterranean await. 🍽️✨<br /><br />
+              </p>
+              <div id="hours">
+                <ul>
+                  <li>Mon-Fri: 2pm-10pm</li>
+                  <li>Sat: 2pm-11pm</li>
+                  <li>Sun: 2pm-9pm</li>
+                </ul>
+              </div>
             </figcaption>
           </figure>
         </article>

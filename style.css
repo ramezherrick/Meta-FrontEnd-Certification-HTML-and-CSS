@@ -77,22 +77,39 @@ section {
 article {
   flex: 1;
 }
-.main-heading {
-  text-align: center;
+.banner {
+  width: 100%;
+  background-color: rgba(9, 94, 4, 0.2);
+  color: #032414;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 3px solid #4b5b53;
+  border-radius: 1rem;
 }
-.main-heading-text {
-  text-align: center;
-  margin: 0;
-  padding: 0;
+#index-figure-section {
+  gap: 1rem;
+}
+#index-figure {
+  background-color: rgba(75, 91, 83, 0.2);
+  border-radius: 3rem;
+  min-height: 530px;
 }
 .sub-heading {
   text-align: center;
   margin: 0.5rem;
+  margin-top: 1rem;
   font-style: italic;
 }
 .sub-text {
   margin: 0;
+  margin-top: 1rem;
   text-align: center;
+  color: #4b5b53;
+}
+
+figcaption li {
+  list-style: none;
   color: #4b5b53;
 }
 @keyframes fadeIn {
@@ -118,18 +135,41 @@ span {
   width: 355px;
   height: 250px;
   border-radius: 50%;
-  border: 5px solid #637a6e;
+  padding-top: 1rem;
 }
 
-#index-image:hover {
-  display: block;
+figcaption {
+  text-align: center;
+}
+figcaption button {
+  background-color: #4b5b53;
   margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 355px;
-  height: 250px;
-  border-radius: 3rem;
-  border: 5px solid #637a6e;
+}
+#index-button {
+  padding: 3px;
+  color: #4b5b53;
+  animation: bookAnimation 1s infinite alternate;
+  font-style: oblique;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 5px solid #4b5b53;
+  background-color: #deebe4;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+#hours {
+  padding: 3px;
+  color: #4b5b53;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  width: 60%;
+  display: inline-block;
+  text-align: center;
+}
+#index-button a {
+  color: #4b5b53;
+  text-decoration: none;
 }
 
 footer {
@@ -224,14 +264,14 @@ form div fieldset input {
   color: #4b5b53;
   font-size: 1rem;
 }
-#book {
+#book-button {
   padding: 3px;
   color: #4b5b53;
   animation: bookAnimation 1s infinite alternate;
   font-style: oblique;
   font-size: 1.5rem;
   font-weight: bold;
-  border: 5px double #4b5b53;
+  border: 5px solid #4b5b53;
   background-color: #deebe4;
   border-radius: 1rem;
   cursor: pointer;
@@ -249,10 +289,9 @@ form div fieldset input {
 
 @keyframes bookAnimation {
   from {
-    font-style: normal;
+    background-color: #9db5a9;
   }
   to {
-    font-style: italic;
   }
 }
 .about {
@@ -282,6 +321,9 @@ form div fieldset input {
 .about-text ul li {
   color: #4b5b53;
   font-size: 1.5rem;
+}
+.about-images {
+  margin-top: 5rem;
 }
 .about div section {
   display: flex;
